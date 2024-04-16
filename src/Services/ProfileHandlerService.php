@@ -85,7 +85,7 @@ class ProfileHandlerService extends AbstractController
                 return $this->redirectToRoute('budget_chart');
             }
 
-            return $this->render('profile/student.html.twig', [
+            return $this->render('Profile/student.html.twig', [
                 'profile' => $profile,
                 'profileBudget' => $profileBudget,
                 'form' => $form->createView(),
@@ -120,7 +120,7 @@ class ProfileHandlerService extends AbstractController
                 return $this->redirectToRoute('budget_chart');
             }
 
-            return $this->render('profile/traveler.html.twig', [
+            return $this->render('Profile/traveler.html.twig', [
                 'profile' => $profile,
                 'profileBudget' => $profileBudget,
                 'form' => $form->createView(),
@@ -155,7 +155,7 @@ public function createInvestorProfile(int $id, Request $request, EntityManagerIn
                 return $this->redirectToRoute('budget_chart');
             }
 
-            return $this->render('profile/investor.html.twig', [
+            return $this->render('Profile/investor.html.twig', [
                 'profile' => $profile,
                 'profileBudget' => $profileBudget,
                 'form' => $form->createView(),
@@ -190,7 +190,7 @@ public function createInvestorProfile(int $id, Request $request, EntityManagerIn
                 return $this->redirectToRoute('budget_chart');
             }
 
-            return $this->render('profile/parent.html.twig', [
+            return $this->render('Profile/parent.html.twig', [
                 'profile' => $profile,
                 'profileBudget' => $profileBudget,
                 'form' => $form->createView(),
@@ -225,7 +225,7 @@ public function createInvestorProfile(int $id, Request $request, EntityManagerIn
                 return $this->redirectToRoute('budget_chart');
             }
 
-            return $this->render('profile/couple.html.twig', [
+            return $this->render('Profile/couple.html.twig', [
                 'profile' => $profile,
                 'profileBudget' => $profileBudget,
                 'form' => $form->createView(),
