@@ -56,7 +56,7 @@ class ProfileHandlerService extends AbstractController
             }
         }
 
-        return $this->render('profile/profile.html.twig', [
+        return $this->render('Profile/profile.html.twig', [
             'form' => $form->createView(),
         ]);
     }
